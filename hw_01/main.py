@@ -31,7 +31,7 @@ def swap_the_case(input_str) -> str:
 
 
 # Returns either roots of the given equation or None if there were not found
-def get_square_equation_roots(equation):
+def get_square_equation_roots(equation: str):
     x = re.search("^([-|+]*)(\d)*x\*\*\d+\s+([-|+]+)\s+(\d*)\*x\s+(\+)\s+(\d+)\s+=\s+\d+$", equation)
 
     if x is None:
