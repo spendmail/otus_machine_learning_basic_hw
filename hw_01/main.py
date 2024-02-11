@@ -36,6 +36,9 @@ def swap_the_case(input_str) -> str:
 def get_square_equation_roots(equation):
     x = re.search("^([-|+]*)(\d)*x\*\*\d+\s+([-|+]+)\s+(\d*)\*x\s+(\+)\s+(\d+)\s+=\s+\d+$", equation)
 
+    if x is None:
+        raise Exception(f'Unable to parse the equation: {equation}')
+
     a_sign = x.group(1) if x.group(1) != '' else '+'
 
     a = int(x.group(2)) if x.group(2) is not None else 1
