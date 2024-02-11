@@ -8,11 +8,9 @@ DICTIONARY = {ALPHABET[i]: i for i in range(len(ALPHABET))}
 # Returns string from the given integer split up with spaces
 def int_to_string(num: int, delimiter=' ') -> str:
     result = ''
-    i = 0
-    while num > 0:
+    for i in range(len(str(num))):
         result = str(num % 10) + (delimiter if i % 3 == 0 and i != 0 else '') + result
         num //= 10
-        i += 1
 
     return result
 
