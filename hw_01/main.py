@@ -6,11 +6,11 @@ DICTIONARY = {ALPHABET[i]: i for i in range(len(ALPHABET))}
 
 
 # Returns string from the given integer split up with spaces
-def int_to_string(num: int, delimiter=' ') -> str:
+def int_to_string(n: int, delimiter=' ') -> str:
     result = ''
-    for i in range(len(str(num))):
-        result = str(num % 10) + (delimiter if i % 3 == 0 and i != 0 else '') + result
-        num //= 10
+    for i in range(len(str(n))):
+        result = str(n % 10) + (delimiter if i % 3 == 0 and i != 0 else '') + result
+        n //= 10
 
     return result
 
@@ -22,7 +22,7 @@ def to_camel_case(snake_str: str) -> str:
 
 # Transforms given text from camel case to snake case
 def to_snake_case(camel_str: str) -> str:
-    return '_'.join(re.findall('[A-Z][^A-Z]*', camel_str)).lower()
+    return '_'.join(re.findall("[A-Z][^A-Z]*", camel_str)).lower()
 
 
 # Swaps given text from camel case to snake case and backwards
@@ -31,11 +31,11 @@ def swap_the_case(input_str) -> str:
 
 
 # Returns either roots of the given equation or None if there were not found
-def get_square_equation_roots(equation: str):
-    x = re.search("^([-|+]*)(\d)*x\*\*\d+\s+([-|+]+)\s+(\d*)\*x\s+(\+)\s+(\d+)\s+=\s+\d+$", equation)
+def get_square_equation_roots(eq: str):
+    x = re.search(r"^([-|+]*)(\d)*x\*\*\d+\s+([-|+]+)\s+(\d*)\*x\s+(\+)\s+(\d+)\s+=\s+\d+$", eq)
 
     if x is None:
-        raise Exception(f'Unable to parse the equation: {equation}')
+        raise Exception(f'Unable to parse the equation: {eq}')
 
     a_sign = x.group(1) if x.group(1) != '' else '+'
 
