@@ -96,12 +96,12 @@ if __name__ == '__main__':
     first_assignment_data = [1234567890, 267, 34976]
     print("\nFirst assignment:")
     for num in first_assignment_data:
-        print(f'given: {num}, result: {int_to_string(num)}')
+        print(f'given: "{num}", result: "{int_to_string(num)}"')
 
     second_assignment_data = ['my_first_func', 'AnotherFunction']
     print("\nSecond assignment:")
     for text in second_assignment_data:
-        print(f'given: {text}, result: {swap_the_case(text)}')
+        print(f'given: "{text}", result: "{swap_the_case(text)}"')
 
     third_assignment_data = ['x**2 - 11*x + 28 = 0']
     print("\nThird assignment:")
