@@ -3,6 +3,14 @@ from src.services import FileSystem, S3, Storage
 
 
 class Media:
+    """Basic class for all media types.
+
+    Possesses common properties.
+
+    Takes respective services that implements Storage interface
+    in order to work with different storages and file systems.
+    """
+
     def __init__(self, file_path: str, storage: Storage = FileSystem()):
         if not isinstance(storage, Storage):
             raise NotImplementedInterfaceError('storage must be an instance of Storage interface')
@@ -22,6 +30,10 @@ class Media:
 
 
 class Video(Media):
+    """Implementation for working with video types.
+
+    Reliable for encoding video into different formats.
+    """
     MIME_TYPE_MP4 = 'video/mp4'
     MIME_TYPE_AVI = 'video/avi'
 
@@ -41,6 +53,11 @@ class Video(Media):
 
 
 class Audio(Media):
+    """Implementation for working with audio types.
+
+    Reliable for converting audio into different formats.
+    """
+
     MIME_TYPE_MP3 = 'audio/mpeg'
     MIME_TYPE_FLAC = 'audio/flac'
 
@@ -60,6 +77,11 @@ class Audio(Media):
 
 
 class Image(Media):
+    """Implementation for working with images.
+
+    Reliable for cropping images.
+    """
+
     def __init__(self, file_path: str, storage: Storage = FileSystem()):
         super().__init__(file_path, storage=storage)
 
