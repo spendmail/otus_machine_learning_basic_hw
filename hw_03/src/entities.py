@@ -1,5 +1,5 @@
-from hw_03.errors import NotImplementedMethodError, NotImplementedInterfaceError
-from hw_03.services import FileSystem, S3, Storage
+from src.errors import NotImplementedMethodError, NotImplementedInterfaceError
+from src.services import FileSystem, S3, Storage
 
 
 class Media:

@@ -1,4 +1,4 @@
-from hw_03.errors import NotImplementedInterfaceError
+from src.errors import NotImplementedInterfaceError
 
 
 class Storage:

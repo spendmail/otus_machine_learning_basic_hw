@@ -1,5 +1,5 @@
-from hw_03.entities import Image, Audio, Video
-from hw_03.errors import NotImplementedInterfaceError
+from src.entities import Video, Audio, Image
+from src.errors import NotImplementedInterfaceError
 
 if __name__ == '__main__':
 
