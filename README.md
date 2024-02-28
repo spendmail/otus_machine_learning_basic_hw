@@ -16,7 +16,7 @@ cd otus_machine_learning_basic_hw/hw_02/
 jupyter notebook homework_1_62081_2ba3d5-168549-2f5b1d.ipynb
 ```
 
-## [Домашняя работа №3](./hw_03_backup)
+## [Домашняя работа №3](./hw_03)
 
 ```
 git clone git@github.com:spendmail/otus_machine_learning_basic_hw.git
