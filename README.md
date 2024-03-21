@@ -23,3 +23,11 @@ git clone git@github.com:spendmail/otus_machine_learning_basic_hw.git
 cd otus_machine_learning_basic_hw/hw_03/
 python3 main.py
 ```
+
+## [Домашняя работа №4](./hw_04)
+
+```
+git clone git@github.com:spendmail/otus_machine_learning_basic_hw.git
+cd otus_machine_learning_basic_hw/hw_04/
+jupyter notebook homework_2.ipynb
+```
