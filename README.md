@@ -31,3 +31,11 @@ git clone git@github.com:spendmail/otus_machine_learning_basic_hw.git
 cd otus_machine_learning_basic_hw/hw_04/
 jupyter notebook homework_2.ipynb
 ```
+
+## [Домашняя работа №5](./hw_05)
+
+```
+git clone git@github.com:spendmail/otus_machine_learning_basic_hw.git
+cd otus_machine_learning_basic_hw/hw_05/
+jupyter notebook Analyze_and_Visualize.ipynb
+```
